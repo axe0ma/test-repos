@@ -1,1 +1,2 @@
-Haii this is my repo >:3
+# Haii this is my repo >:3
+# I am learning git!
