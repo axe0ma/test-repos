@@ -1,0 +1,22 @@
+CompileFlags:
+  Add: [
+  -Wall,
+  -lstdc++exp,
+  -std=c++26,
+  -Wimplicit-fallthrough,
+  --target=x86_64-w64-mingw32 #this one makes clangd detect g++ std library on Windows however theres an another way if you're using CMake
+  ]
+  Compiler: g++
+
+Diagnostics:
+  UnusedIncludes: None
+  ClangTidy:
+    FastCheckFilter: None
+    #Add: misc-const-correctness
+
+Completion:
+  AllScopes: Yes
+  ArgumentLists: Delimiters
+  HeaderInsertion: Never
+  CodePatterns: All
+  MacroFilter: ExactPrefix
